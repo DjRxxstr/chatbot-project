@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Christ blue logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .top-right-icons {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+        }
+        .top-right-icons button {
+            margin-left: 5px;
+            font-size: 30px; 
+            color: #00bbff; 
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <p> <a href="./../Chatbot-using-html-css-and-JavaScript-main/instagram-login-main/login.html" style="padding: 5px; border: 1px solid #000; text-decoration: none; border-radius: 2px; position: fixed;">Logout</a></p>
+</head>
+<body>
+    <!-- Icon buttons at the top right corner -->
+    <div class="top-right-icons">
+        <button class="btn-icon"><i class="fa fa-home"></i></button>
+        <button class="btn-icon"><i class="fa fa-bars"></i></button>
+        <button class="btn-icon"><i class="fa fa-refresh"></i></button>
+    </div>
+
+    <div class="chatbot-container">
+        <div id="header">
+            <img src="./Christ blue logo.png" alt="logo">
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
+              </div>
+            </div>
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text" placeholder="Type your message here">
+                <button id="submit-button" type="submit">
+                  <i class="fa fa-paper-plane"></i>
+                </button>
+              </message-container>
+                
+            </form>
+        </div>  
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
